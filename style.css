@@ -1,0 +1,235 @@
+/*Font family setup*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-font {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Shared style start from here*/
+.btn-primary {
+    background-color: rgb(224, 44, 109);
+    padding: 10px 24px 10px 24px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    gap: 8px;
+}
+
+.flex {
+    display: flex;
+}
+
+.card-title {
+    color: rgb(24, 25, 31);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.text-content {
+    color: rgb(108, 108, 108);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.imgResponsive {
+    height: 100%;
+    width: 100%;
+}
+
+.header,
+.card-layout,
+.match-section,
+.footer {
+    padding: 15px;
+}
+
+/*Header section style start from here*/
+.bg-primary {
+    background-color: #2D25A0;
+}
+
+/*Nav-bar design start from here*/
+.nav-bar {
+    justify-content: space-between;
+    max-width: 1160px;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.bar {
+    display: none;
+    color: rgb(255, 255, 255);
+}
+
+.fa-bars {
+    font-size: 30px;
+}
+
+.nav-item {
+    list-style: none;
+
+}
+
+.nav-items {
+    gap: 24px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+/*Hero section styles start from here*/
+.hero-section {
+    max-width: 1160px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.hero-section-title {
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.hero-section-image {
+    width: 40%;
+}
+
+/*main section styles start from here*/
+.main {
+    max-width: 1160px;
+    margin: 90px auto;
+}
+
+.card img {
+
+    height: 270px;
+}
+
+.card {
+    height: 484px;
+    ;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-layout {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    row-gap: 20px;
+
+}
+
+/*match section style start from here*/
+.match-section {
+    justify-content: space-between;
+    margin: 90px auto;
+}
+
+#match-title {
+    color: rgb(10, 8, 38);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.match-section-text-content {
+    width: 50%;
+
+    gap: 20px;
+    flex-direction: column;
+}
+
+.match-section-image {
+    width: 40%;
+
+}
+
+/*Footer section style start from here*/
+
+.footer {
+    width: 40%;
+    height: auto;
+    margin: 20px auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 70%;
+}
+
+.social-item {
+    list-style: none;
+}
+
+.social-items {
+    gap: 20px;
+}
+
+.social-link img {
+    height: 32px;
+    width: 32px;
+}
+
+/*Responsive for mobile devices*/
+@media screen and (max-width:576px) {
+
+    .hero-section-title,
+    #match-title {
+        width: 100%;
+        font-size: 2.4rem;
+    }
+
+    .hero-section-image,
+    .match-section-text-content,
+    .match-section-image {
+        width: 100%;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .bar {
+        display: block;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-layout {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .match-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+}
